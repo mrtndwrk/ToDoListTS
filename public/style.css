@@ -1,0 +1,113 @@
+*{
+  box-sizing: border-box;
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+header{
+  background-color: #f8f9fa;
+  color: black;
+  padding: 15px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+nav{
+  margin: auto auto;
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul{
+  display: flex;
+  gap: 20px;
+}
+
+main{
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  size: 50px;
+  color: black;
+}
+.icon:hover{
+  color: gray;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-title span {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 670px) {
+  nav{
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-title{
+    color: transparent;
+  }
+}
+  
+
+  
+#new-task-title{
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid transparent;
+  border-bottom: 1px solid #333;
+  outline: none;
+  transition: border 0.3s linear;
+}
+
+#new-task-title:focus{
+  border: 2px solid #333;
+}
+
+
+
+
+button{
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover{
+  background-color: #555;
+}

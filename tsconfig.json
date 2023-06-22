@@ -1,6 +1,7 @@
 {
   "include": ["src", "types"],
   "compilerOptions": {
+    "ignoreDeprecations": "5.0",
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",
