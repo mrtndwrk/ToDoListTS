@@ -198,6 +198,20 @@ button:hover{
   }
 }
 
+@media screen and (max-width: 650px) {
+  .task-container{
+    width: 80vw;
+  }
+  #new-task-title{
+    width: 70vw;
+  }
+  #list{
+    width: 70vw;
+  }
+}
+  
+
+
 @media screen and (max-width: 500px) {
   .header-title{
     color: transparent;
