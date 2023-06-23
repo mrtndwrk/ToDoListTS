@@ -69,19 +69,20 @@ main{
   
 .task-container{
   padding: 20px;
-  width: 500px;
+  width: 800px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* This line is added to center the items vertically */
-  align-items: center; /* This line is added to center the items horizontally */
+  justify-content: center; 
+  align-items: center;
   background-color: #bcbcbc;
 }
 
   
 #new-task-title{
   border-radius: 5px;
-  width: 25vw;
+  max-width: 700px;
+  width: 100%;
   padding: 10px;
   font-size: 1.2rem;
   border: 2px solid transparent;
@@ -90,6 +91,12 @@ main{
   transition: border 0.3s linear;
   margin-bottom: 10px;
   background-color: transparent;
+  text-align: center;
+}
+
+#new-task-form{
+  max-width: 700px;
+  width: 100%;
 }
 
 #new-task-title:focus{
@@ -98,7 +105,8 @@ main{
 
 #list {
   padding: 0;
-  width: 25vw;
+  max-width: 700px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,10 +117,9 @@ main{
 
 
 #list li {
-  text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
-  max-width: 30vw;
+  max-width: 100%;
   text-align: center; /* add this line to center the list items */
   white-space: nowrap; /* add this line to prevent line breaks */
   overflow: hidden; /* add this line to hide vertical overflow */
@@ -163,11 +170,6 @@ button{
 #instructions{
   padding-bottom: 2rem;
 }
-
-
-  
-
-
 
 button:hover{
   background-color: #555;
