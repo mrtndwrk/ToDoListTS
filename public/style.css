@@ -81,7 +81,7 @@ main{
   
 #new-task-title{
   border-radius: 5px;
-  width: 70vw;
+  width: 25vw;
   padding: 10px;
   font-size: 1.2rem;
   border: 2px solid transparent;
@@ -98,7 +98,7 @@ main{
 
 #list {
   padding: 0;
-  width: 70vw;
+  width: 25vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,7 +112,7 @@ main{
   text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
-  max-width: 70vw;
+  max-width: 30vw;
   text-align: center; /* add this line to center the list items */
   white-space: nowrap; /* add this line to prevent line breaks */
   overflow: hidden; /* add this line to hide vertical overflow */
@@ -178,11 +178,26 @@ button:hover{
   .header-title{
     display: none;
   }
+  .task-container{
+    width: 50vw;
+  }
+  #new-task-title{
+    width: 40vw;
+  }
+  #list{
+    width: 40vw;
+  }
+
 }
 
 @media screen and (max-width: 670px) {
-  .task-container{
+  nav{
     width: 90vw;
   }
 }
 
+@media screen and (max-width: 500px) {
+  .header-title{
+    color: transparent;
+  }
+}
