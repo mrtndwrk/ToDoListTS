@@ -65,21 +65,11 @@ main{
   margin-left: 0.5rem;
 }
 
-@media screen and (max-width: 670px) {
-  nav{
-    width: 90vw;
-  }
-}
 
-@media screen and (max-width: 500px) {
-  .header-title{
-    color: transparent;
-  }
-}
   
 .task-container{
   padding: 20px;
-  width: 30vw;
+  width: 500px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -91,7 +81,7 @@ main{
   
 #new-task-title{
   border-radius: 5px;
-  width: 25vw;
+  width: 70vw;
   padding: 10px;
   font-size: 1.2rem;
   border: 2px solid transparent;
@@ -108,7 +98,7 @@ main{
 
 #list {
   padding: 0;
-  width: 25vw;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,7 +112,7 @@ main{
   text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
-  max-width: 30vw;
+  max-width: 70vw;
   text-align: center; /* add this line to center the list items */
   white-space: nowrap; /* add this line to prevent line breaks */
   overflow: hidden; /* add this line to hide vertical overflow */
@@ -175,7 +165,24 @@ button{
 }
 
 
+  
+
+
 
 button:hover{
   background-color: #555;
 }
+
+
+@media screen and (max-width: 1250px) {
+  .header-title{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .task-container{
+    width: 90vw;
+  }
+}
+
