@@ -58,13 +58,15 @@
   </header>
 
   <main>
-    <p>Click on a task to mark it as done.</p>
+    <p id="instructions">Click on a task to mark it as done.</p>
     
-    <form id="new-task-form">
-      <input type="text" id="new-task-title" placeholder="Enter task here" name="name" itemid="name">
-      <!-- <button type="submit">Add</button> -->
-    </form>
-    <ul id="list"></ul>
+    <div class="task-container">
+      <form id="new-task-form">
+        <input type="text" id="new-task-title" placeholder="Enter task here and press enter" name="name" itemid="name" autocomplete="off">
+        <!-- <button type="submit">Add</button> -->
+      </form>
+      <ul id="list"></ul>
+  </div>
   </main>
 </body>
 
