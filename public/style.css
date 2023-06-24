@@ -20,7 +20,10 @@ body{
 header{
   background-color: #f8f9fa;
   color: black;
+  max-height: 81px;
   padding: 15px;
+  display: flex;
+  align-items: center;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
@@ -29,7 +32,7 @@ nav{
   width: 60vw;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 ul{
@@ -55,15 +58,17 @@ main{
 }
 
 .header-title {
+  margin-top: -8px;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  justify-content: center;
   font-weight: bold;
   color: #333;
 }
 
 .header-title span {
-  display: inline-flex;
+  justify-content: center;
+  display: flex;
   align-items: center;
   margin-left: 0.5rem;
 }
